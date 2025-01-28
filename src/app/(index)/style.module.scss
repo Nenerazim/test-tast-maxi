@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.actionsTable {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  @media (screen and max-width: 900px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.sortContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.thImg {
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  border-radius: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: var(--font_14);
+  background: rgb(var(--colors_orange_233));
+}

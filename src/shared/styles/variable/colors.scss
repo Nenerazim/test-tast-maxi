@@ -1,0 +1,29 @@
+:root {
+  --colors_dark: 30, 30, 30;
+  --colors_darkest: 15, 15, 15;
+
+  --colors_light: 220, 220, 220;
+  --colors_lightest: 245, 245, 245;
+
+  //orange
+  --colors_orange_220: 220, 164, 85;
+  --colors_orange_225: 224, 175, 106;
+  --colors_orange_229: 229, 187, 127;
+  --colors_orange_233: 233, 198, 148;
+  --colors_orange_237: 237, 209, 169;
+
+  .dark {
+    --colors_dark: 220, 220, 220;
+    --colors_darkest: 245, 245, 245;
+
+    --colors_light: 30, 30, 30;
+    --colors_lightest: 15, 15, 15;
+
+    --colors_orange_220: 180, 120, 60;
+    --colors_orange_225: 170, 120, 80;
+    --colors_orange_229: 160, 130, 90;
+    --colors_orange_233: 150, 140, 100;
+    --colors_orange_237: 140, 150, 110;
+  }
+  //
+}

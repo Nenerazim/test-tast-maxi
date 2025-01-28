@@ -1,0 +1,15 @@
+.createModalContainer {
+  padding: 1rem;
+  max-width: 25rem;
+  width: 100%;
+  h3 {
+    display: block;
+    margin-bottom: 3rem;
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

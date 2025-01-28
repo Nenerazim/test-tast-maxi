@@ -1,0 +1,55 @@
+@use 'sass:meta';
+
+@include meta.load-css('variable/index');
+@include meta.load-css('base/index');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  font-size: 3.5vw;
+  @media (min-width: 488px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(var(--colors_darkest));
+  background: rgb(var(--colors_light));
+}
+
+.application {
+  flex-direction: column;
+  min-height: 100dvh;
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  flex: 1;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}

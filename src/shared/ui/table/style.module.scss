@@ -1,0 +1,73 @@
+.tableWrapper {
+  overflow-x: auto;
+  border: 1px solid rgba(var(--colors_dark), 0.2);
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(var(--colors_lightest));
+  color: rgb(var(--colors_darkest));
+}
+
+.tableHeader {
+  background-color: rgba(var(--colors_orange_229), 0.9);
+  color: white;
+  text-align: left;
+  padding: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.thAction {
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(var(--colors_orange_233), 1);
+  }
+}
+
+.tableRow:nth-child(odd) {
+  background-color: rgba(var(--colors_light), 0.7);
+}
+
+.tableRow:nth-child(even) {
+  background-color: rgba(var(--colors_lightest), 0.7);
+}
+
+.tableCell {
+  padding: 12px;
+  border-bottom: 1px solid rgba(var(--colors_dark), 0.2);
+  text-align: left;
+}
+
+.dark {
+  .table {
+    background-color: rgb(var(--colors_dark));
+    color: rgb(var(--colors_light));
+  }
+
+  .tableHeader {
+    background-color: rgba(var(--colors_orange_220), 0.9);
+    &:hover {
+      background-color: rgba(var(--colors_orange_225), 1);
+    }
+  }
+
+  .tableRow:nth-child(odd) {
+    background-color: rgba(var(--colors_darkest), 0.7);
+  }
+
+  .tableRow:nth-child(even) {
+    background-color: rgba(var(--colors_dark), 0.7);
+  }
+}
+
+.notFound {
+  background: rgb(var(--colors_lightest));
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: var(--font_20);
+}

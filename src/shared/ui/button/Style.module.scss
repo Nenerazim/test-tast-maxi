@@ -1,0 +1,45 @@
+.button {
+  transition:
+    background 0.3s,
+    color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.full {
+  width: 100%;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background: rgb(var(--colors_orange_233)) !important;
+}
+
+.light {
+  background: rgb(var(--colors_orange_229));
+  color: rgb(var(--colors_dark));
+  &:hover {
+    background: rgb(var(--colors_orange_220));
+  }
+}
+
+.dark {
+  background: rgb(var(--colors_dark));
+  color: rgb(var(--colors_light));
+  &:hover {
+    color: rgb(var(--colors_dark));
+    background: rgb(var(--colors_orange_237));
+  }
+}
+
+.six {
+  height: 3.75rem;
+  padding: 0 1.5rem;
+}
+
+.five {
+  height: 3.125rem;
+  padding: 0 1rem;
+}

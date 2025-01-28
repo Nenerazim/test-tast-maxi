@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: rgb(var(--colors_orange_220));
+}
+
+.switchTheme {
+  display: flex;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  background: rgb(var(--colors_lightest));
+  padding: 0.5rem;
+  transition:
+    scale 0.3s,
+    background 0.3s;
+  &:hover {
+    background: rgba(var(--colors_light));
+    scale: 1.05;
+  }
+}

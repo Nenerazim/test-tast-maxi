@@ -1,0 +1,36 @@
+.footer {
+  background: rgb(var(--colors_orange_220));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav {
+  font-size: var(--font_16);
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @media (screen and max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  li {
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgb(var(--colors_lightest));
+    }
+  }
+}
